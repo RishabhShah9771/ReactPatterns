@@ -1,17 +1,10 @@
-import savannaImg from "./assets/african-savanna.jpg";
-import amazonImg from "./assets/amazon-river.jpg";
-import caribbeanImg from "./assets/caribbean-beach.jpg";
-import desertImg from "./assets/desert-dunes.jpg";
-import forestImg from "./assets/forest-waterfall.jpg";
+import savannaImg from "../../assets/african-savanna.jpg";
+import amazonImg from "../../assets/amazon-river.jpg";
+import caribbeanImg from "../../assets/caribbean-beach.jpg";
+import desertImg from "../../assets/desert-dunes.jpg";
+import forestImg from "../../assets/forest-waterfall.jpg";
 
-interface Place {
-  id: string;
-  image: string;
-  title: string;
-  description: string;
-}
-
-const PLACES: Place[] = [
+export const PLACES = [
   {
     id: "african-savanna",
     image: savannaImg,
@@ -43,5 +36,3 @@ const PLACES: Place[] = [
     description: "Listen to the sound of the water.",
   },
 ];
-
-export default PLACES;
